@@ -26,6 +26,33 @@ void displayGraph()
         printf("\n");
     }
 }
+void showDistancesFromA()
+{
+    int distance[MAX];
+    int i;
+
+    distance[0] = 0;
+
+    for (i = 1; i < vertices; i++)
+    {
+        distance[i] = 999;
+    }
+
+    for (i = 0; i < vertices; i++)
+    {
+        if (graph[0][i] != 0)
+        {
+            distance[i] = graph[0][i];
+        }
+    }
+
+    printf("\nDistances from location 0:\n");
+
+    for (i = 0; i < vertices; i++)
+    {
+        printf("Location %d = %d\n", i, distance[i]);
+    }
+}
 
 int main()
 {
@@ -48,6 +75,7 @@ int main()
     addRoad(2, 3, 4);
 
     displayGraph();
+    showDistancesFromA();
 
     return 0;
 }
