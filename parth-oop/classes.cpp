@@ -76,7 +76,7 @@ public:
 
 int main()
 {
-    cout << "===== OOP MODULE =====\n\n";
+    cout << "  OOP MODULE  \n\n";
 
     Road road1("A", "B", 5);
     Traffic traffic1(1);
