@@ -3,9 +3,7 @@ using namespace std;
 
 void showMenu()
 {
-    cout << "\n========================================\n";
     cout << "   SMART TRAFFIC ROUTE OPTIMIZATION\n";
-    cout << "========================================\n";
 
     cout << "1. View Road Network\n";
     cout << "2. View Traffic\n";
@@ -47,7 +45,7 @@ int main()
         }
         else
         {
-            cout << "\nInvalid choice. Try again.\n";
+            cout << "\nInvalid choice\n";
         }
 
     } while (choice != 5);
