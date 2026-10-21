@@ -11,7 +11,7 @@ struct RoadTraffic
 
 void displayTraffic(RoadTraffic roads[], int n)
 {
-    cout << "\n===== TRAFFIC INFORMATION =====\n";
+    cout << "\n TRAFFIC INFORMATION \n";
 
     for (int i = 0; i < n; i++)
     {
@@ -76,7 +76,7 @@ int main()
 
     do
     {
-        cout << "\n===== TRAFFIC MODULE =====\n";
+        cout << "\n TRAFFIC MODULE \n";
         cout << "1. View Traffic\n";
         cout << "2. Update Traffic\n";
         cout << "3. Exit\n";
